@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.none{
+    display: none;
+    transition: all .4s ease-in;
+}
+
+.earthinicio{
+    width: 120%;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .8s ease-out;
+}
+
+.earthinicio.deshow{
+    width: 120%;
+    position: absolute;
+    top: 158%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .8s ease-in;
+}
+
+.earthinicio img {
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    font-family: 'Nova Square', sans-serif;
+    font-size: 6vh;
+    font-weight: 700;
+    z-index: 3;
+    transition: all .8s ease-out;
+    color: white;
+}
+
+.title.deshow {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    font-family: 'Nova Square', sans-serif;
+    font-size: 6vh;
+    font-weight: 700;
+    z-index: 3;
+    transition: all .8s ease-in;
+    color: white;
+}
+
+.but {
+    position: absolute;
+    bottom: 2.8vh;
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all .8s ease-out;
+}
+
+.but.deshow {
+    position: absolute;
+    bottom: -28vh;
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all .8s ease-in;
+}
+
+.but button {
+    padding: 0.6rem 3rem;
+    border-radius: 8px;
+    background-color: hsla(60, 100%, 50%, 0.493);
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    color: black;
+    font-size: 3vh;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.popup{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0.1px;
+    height: 0.1px;
+    background-color: white;
+    transition: all .4s ease-out;
+    overflow: hidden;
+}
+
+.popup.active{
+    display: inline-flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    height: auto;
+    padding: 1rem 0.7rem;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 20px;
+    z-index: 4;
+    transition: all .4s ease-in;
+}
+
+.popup.active p{
+    color: rgb(0, 0, 0);
+    font-size: 2.5vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.popup.active button{
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(84, 90%, 49%);
+    font-size: 2.5vh;
+    font-family: 'Poppins', sans-serif;
+}
